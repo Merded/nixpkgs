@@ -17,6 +17,7 @@ in
 {
   options.services.wiki-js = {
     enable = mkEnableOption "wiki-js";
+    package = lib.mkPackageOption pkgs "wikijs" { };
 
     environmentFile = mkOption {
       type = types.nullOr types.path;
